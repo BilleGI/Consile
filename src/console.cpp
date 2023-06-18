@@ -42,54 +42,10 @@ void CallerMainWindow::setLineEdit(int&& channel)
     }
 }
 
-void CallerMainWindow::add0()
+void CallerMainWindow::addnumber()
 {
-    setLineEdit(0);
-}
-
-void CallerMainWindow::add1()
-{
-    setLineEdit(1);
-}
-
-void CallerMainWindow::add2()
-{
-    setLineEdit(2);
-}
-
-void CallerMainWindow::add3()
-{
-    setLineEdit(3);
-}
-
-void CallerMainWindow::add4()
-{
-    setLineEdit(4);
-}
-
-void CallerMainWindow::add5()
-{
-    setLineEdit(5);
-}
-
-void CallerMainWindow::add6()
-{
-    setLineEdit(6);
-}
-
-void CallerMainWindow::add7()
-{
-    setLineEdit(7);
-}
-
-void CallerMainWindow::add8()
-{
-    setLineEdit(8);
-}
-
-void CallerMainWindow::add9()
-{
-    setLineEdit(9);
+    QPushButton *btn = dynamic_cast<QPushButton*>(sender());
+    setLineEdit(btn->text().toInt());
 }
 
 void CallerMainWindow::forward()
